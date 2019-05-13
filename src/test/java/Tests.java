@@ -29,9 +29,6 @@ public class Tests {
     @org.junit.Test
     public void testLexer() {
         Lexer lex = new Lexer();
-        List<Token> tokens = lex.identify("array; if; for; stuu [hello]");
-        for (Token token: tokens) {
-            System.out.println(token.toString());
-        }
+        lex.run("func name(a, b, c) { a = b; print(a); print(b); if (a > b) { b = a }; else a = b; return a + b; }");
     }
 }
