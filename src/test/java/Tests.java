@@ -3,6 +3,7 @@ import org.junit.Test;
 import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedLexer;
 import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
+import ru.mirea.skorobogatov.plang.FunctionSeparator.FunctionSeparator;
 import ru.mirea.skorobogatov.plang.Lexer.*;
 import ru.mirea.skorobogatov.plang.Token;
 
@@ -80,5 +81,47 @@ public class Tests {
         }
         for (Token token: a)
             System.out.println(token.toString());
+    }
+
+    @Test
+    public void FuncSeparatorTest() {
+        String str = "{ a := (5) } func f(a, b, c) { } func s(a, b, c) { }";
+        Lexer lexer = new Lexer();
+        List<Token> simpleLex;
+        try {
+            simpleLex = lexer.run(str);
+        } catch (SyntaxException e) {
+            System.out.print(e.getMessage());
+            assert false;
+            return;
+        }
+        AdvancedLexer advancedLexer = new AdvancedLexer(simpleLex);
+        try {
+            advancedLexer.run();
+        } catch (SyntaxException e) {
+            System.out.print(e.getMessage());
+            assert false;
+            return;
+        }
+        List<List<AdvancedToken>> wierd;
+        FunctionSeparator functionSeparator = new FunctionSeparator(advancedLexer.getAdvancedTokenList());
+        try {
+            functionSeparator.run();
+        } catch (SyntaxException e) {
+            System.out.print(e.getMessage());
+            assert false;
+            return;
+        }
+        wierd = functionSeparator.getFunctionList();
+        List<AdvancedToken> main = functionSeparator.getMainTokenList();
+        System.out.println("MAIN");
+        for (AdvancedToken a: main)
+            a.print();
+        System.out.println("NOT MAIN");
+        for (List<AdvancedToken> a: wierd) {
+            System.out.println(); System.out.println();
+            for (AdvancedToken b: a)
+                b.print();
+        }
     }
 }

@@ -9,6 +9,10 @@ public class AdvancedToken {
     List<Token> tokens;
     AdvancedTokenType tokenType;
 
+    public AdvancedTokenType getTokenType() {
+        return tokenType;
+    }
+
     public void print() {
         for (Token token: tokens) {
             System.out.println(token.toString());
