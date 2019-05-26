@@ -1,3 +1,5 @@
+package ru.mirea.skorobogatov.plang;
+
 import java.util.List;
 import java.util.Scanner;
 

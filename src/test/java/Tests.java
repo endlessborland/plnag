@@ -1,34 +1,84 @@
 import org.junit.Test;
 
-import java.util.List;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedLexer;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
+import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
+import ru.mirea.skorobogatov.plang.Lexer.*;
+import ru.mirea.skorobogatov.plang.Token;
 
-import static org.junit.Assert.assertTrue;
+import java.util.List;
 
 public class Tests {
 
-    @org.junit.Test
-    public void testVARReplacer() {
-        Memory.varValueMap.put("a", 12);
-        assertTrue("12+12".equals(VARReplacer.replaceString("a+12")));
+    public void testAdvancedLexer(String str) {
+        Lexer lexer = new Lexer();
+        List<Token> a;
+        try {
+             a = lexer.run(str);
+        } catch (SyntaxException e) {
+            System.out.print(e.toString());
+            assert false;
+            return;
+        }
+        AdvancedLexer advancedLexer = new AdvancedLexer(a);
+        try {
+            advancedLexer.run();
+        } catch (SyntaxException e) {
+            System.out.print(e.toString());
+            assert false;
+        }
+        List<AdvancedToken> list = advancedLexer.getAdvancedTokenList();
+        for (AdvancedToken t: list)
+            t.print();
+    }
+    @Test
+    public void testAssignLexerFormula() {
+        testAdvancedLexer("a := (5 + b)");
     }
 
-    @org.junit.Test
-    public void testPolishCalc() {
-        Memory.varValueMap.put("a", 3);
-        Memory.varValueMap.put("b", 3);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("12+5*a")) == 27);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("a=b")) == 1);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("a>b")) == 0);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("a<b")) == 0);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("3=2")) == 0);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("3>4")) == 0);
-        assertTrue(PolishCalc.calculate(VARReplacer.replaceString("6<5")) == 0);
-
+    @Test
+    public void testAdvancedLexerWhile() {
+        testAdvancedLexer("while (a + b - 5 / 16)");
     }
 
-    @org.junit.Test
+    @Test
+    public void testAdvancedLexerIf() {
+        testAdvancedLexer("if (a + b = 5 / 16)");
+    }
+
+    @Test
+    public void testAsIs() {
+        testAdvancedLexer("{}else{}else}}");
+    }
+
+    @Test
+    public void testFunc() {
+        testAdvancedLexer("func abs(a, b, c)");
+    }
+
+    @Test
+    public void testFuncCall() {
+        testAdvancedLexer("abs(a, b, c) -> 3");
+    }
+
+    @Test
+    public void testAll() {
+        testAdvancedLexer("func f(a, b, c) { return (a+b) } { a := (5) b := (6) if (a > b) { while (b - a > 0) { b := (b + 1) } } f(b, a, 5) -> c }");
+    }
+
+    @Test
     public void testLexer() {
-        Lexer lex = new Lexer();
-        lex.run("func name(a, b, c) { a = b; print(a); print(b); if (a > b) { b = a }; else a = b; return a + b; }");
+        String str = "while(a+b*5/16)";
+        Lexer lexer = new Lexer();
+        List<Token> a;
+        try {
+             a = lexer.run(str);
+        } catch (SyntaxException e) {
+            System.out.print(e.toString());
+            assert false;
+            return;
+        }
+        for (Token token: a)
+            System.out.println(token.toString());
     }
 }

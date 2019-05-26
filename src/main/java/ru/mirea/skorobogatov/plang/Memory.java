@@ -1,7 +1,9 @@
+package ru.mirea.skorobogatov.plang;
+
 import java.util.HashMap;
 
 public class Memory {
-    public static HashMap<String, Integer> varValueMap = new HashMap<String, Integer>();
+    public HashMap<String, Integer> varValueMap = new HashMap<String, Integer>();
 
     public void addVar(String string) {
         varValueMap.put(string, 0);

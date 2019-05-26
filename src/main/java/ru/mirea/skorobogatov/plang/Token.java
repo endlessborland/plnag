@@ -1,16 +1,20 @@
+package ru.mirea.skorobogatov.plang;
+
+import ru.mirea.skorobogatov.plang.Lexer.LexemPatterns;
+
 public class Token {
     private LexemPatterns lexemPattern;
     private String value;
 
-    Token(LexemPatterns lexemPattern, String value) {
+    public Token(LexemPatterns lexemPattern, String value) {
         this.lexemPattern = lexemPattern;
         this.value = value;
     }
 
-    LexemPatterns getLexeme() {
+    public LexemPatterns getLexeme() {
         return lexemPattern;
     }
-    String getValue()  {
+    public String getValue()  {
         return value;
     }
     public String toString() {

@@ -1,3 +1,5 @@
+package ru.mirea.skorobogatov.plang;
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -7,14 +9,7 @@ import java.io.*;
 public class PolishCalc {
 
     public static Integer calculate(String str) {
-//        ExpressionParser n = new ExpressionParser();
         List<String> expression = ExpressionParser.parse(str);
-//        boolean flag = n.flag;
-//        if (flag) {
-//            for (String x : expression) System.out.print(x + " ");
-//            System.out.println();
-//            System.out.println(Ideone.calc(expression));
-//        }
         return Ideone.calc(expression);
     }
 
@@ -49,7 +44,7 @@ public class PolishCalc {
             if (token.equals("+") || token.equals("-")) return 2;
             if (token.equals("*") || token.equals("/")) return 3;
             if (token.equals(">") || token.equals("<") || token.equals("=")) return 4;
-            return 4;
+            return 5;
         }
 
         public static List<String> parse(String infix) {
