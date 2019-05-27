@@ -6,6 +6,8 @@ import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 import ru.mirea.skorobogatov.plang.FunctionSeparator.FunctionSeparator;
 import ru.mirea.skorobogatov.plang.Lexer.*;
 import ru.mirea.skorobogatov.plang.Token;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Node;
+import ru.mirea.skorobogatov.plang.TreeConstructor.NodeConstructor;
 
 import java.util.List;
 
@@ -81,6 +83,40 @@ public class Tests {
         }
         for (Token token: a)
             System.out.println(token.toString());
+    }
+
+    @Test
+    public void TreeTest() {
+        String str = "{ " +
+                "a := (5) b := (6) " +
+                "while (b > a) " +
+                "{ " +
+                    "if (a > b) " +
+                        "{ return (6); } " +
+                    "if (b > c) " +
+                        "{ return (6); }" +
+                    " else { k := (2) } " +
+                    "c := (6) " +
+                "} " +
+                "}";
+        Lexer lexer = new Lexer();
+        List<Token> simpleLex;
+        try {
+            simpleLex = lexer.run(str);
+            AdvancedLexer advancedLexer = new AdvancedLexer(simpleLex);
+            advancedLexer.run();
+            List<List<AdvancedToken>> wierd;
+            FunctionSeparator functionSeparator = new FunctionSeparator(advancedLexer.getAdvancedTokenList());
+            functionSeparator.run();
+            NodeConstructor nodeConstructor = new NodeConstructor(0, functionSeparator.getMainTokenList());
+            nodeConstructor.createTree();
+            Node t = nodeConstructor.getTopNode();
+            System.out.print("");
+        } catch (SyntaxException e) {
+        System.out.print(e.getMessage());
+        assert false;
+        return;
+    }
     }
 
     @Test

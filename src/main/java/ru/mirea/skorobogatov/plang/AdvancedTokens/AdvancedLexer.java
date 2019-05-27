@@ -224,11 +224,11 @@ public class AdvancedLexer {
     }
 
     private int createFUNC(int i) throws SyntaxException {
-        FuncToken funcToken = new FuncToken();
+        FunctionToken functionToken = new FunctionToken();
         while (this.tokenList.get(++i).getLexeme() == LexemPatterns.WS) { /* do nothing */ }
 
         if (this.tokenList.get(i).getLexeme() == LexemPatterns.VAR)
-            funcToken.setFuncName(this.tokenList.get(i).toString());
+            functionToken.setFuncName(this.tokenList.get(i).toString());
         else
             throw new SyntaxException("Error in FUNC at Token " + i);
 
@@ -242,11 +242,11 @@ public class AdvancedLexer {
                         continue;
                     case VAR:
                         pos++;
-                        funcToken.addParam(this.tokenList.get(i).toString());
+                        functionToken.addParam(this.tokenList.get(i).toString());
                         break;
                     case DIGIT:
                         pos++;
-                        funcToken.addParam(this.tokenList.get(i).toString());
+                        functionToken.addParam(this.tokenList.get(i).toString());
                         break;
                     case COMMA:
                         pos--;
@@ -258,7 +258,7 @@ public class AdvancedLexer {
                     throw new SyntaxException("Error in FUNC misplaced COMMAS at Token " + i);
             }
         } else throw new SyntaxException("Error in FUNC at Token " + i);
-        this.advancedTokenList.add(funcToken);
+        this.advancedTokenList.add(functionToken);
         return i+1;
     }
 

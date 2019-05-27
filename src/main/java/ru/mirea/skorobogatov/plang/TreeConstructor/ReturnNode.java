@@ -6,6 +6,10 @@ public class ReturnNode extends Node {
 
     FormulaToken formulaToken;
 
+    public ReturnNode() {
+        super();
+    }
+
     public void setFormulaToken(FormulaToken formulaToken) {
         this.formulaToken = formulaToken;
     }

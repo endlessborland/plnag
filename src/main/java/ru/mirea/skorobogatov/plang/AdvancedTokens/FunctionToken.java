@@ -3,7 +3,7 @@ package ru.mirea.skorobogatov.plang.AdvancedTokens;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FuncToken extends AdvancedToken {
+public class FunctionToken extends AdvancedToken {
 
     String funcName;
     List<String> params;
@@ -26,7 +26,7 @@ public class FuncToken extends AdvancedToken {
         this.funcName = funcName;
     }
 
-    public FuncToken() {
+    public FunctionToken() {
         super(AdvancedTokenType.FUNC);
         params = new ArrayList<>();
         paramAmount = 0;

@@ -4,6 +4,9 @@ import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
 import ru.mirea.skorobogatov.plang.AdvancedTokens.AssignToken;
 
 public class AssignNode extends Node {
+    public AssignNode() {
+        super();
+    }
 
     AssignToken assignToken;
 
