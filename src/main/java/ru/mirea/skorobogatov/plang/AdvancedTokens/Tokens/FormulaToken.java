@@ -1,10 +1,8 @@
-package ru.mirea.skorobogatov.plang.AdvancedTokens;
+package ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens;
 
 import ru.mirea.skorobogatov.plang.Lexer.Token;
 
-import java.io.Serializable;
-
-import static ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedTokenType.FORMULA;
+import static ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.AdvancedTokenType.FORMULA;
 
 public class FormulaToken extends AdvancedToken {
 

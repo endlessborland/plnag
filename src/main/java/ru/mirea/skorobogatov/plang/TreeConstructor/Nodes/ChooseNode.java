@@ -1,6 +1,4 @@
-package ru.mirea.skorobogatov.plang.TreeConstructor;
-
-import java.util.HashMap;
+package ru.mirea.skorobogatov.plang.TreeConstructor.Nodes;
 
 public class ChooseNode extends Node{
 

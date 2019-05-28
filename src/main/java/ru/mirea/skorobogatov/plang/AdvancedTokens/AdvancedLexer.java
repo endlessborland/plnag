@@ -1,5 +1,6 @@
 package ru.mirea.skorobogatov.plang.AdvancedTokens;
 
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.*;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 import ru.mirea.skorobogatov.plang.Lexer.LexemPatterns;
 import ru.mirea.skorobogatov.plang.Lexer.Token;

@@ -1,12 +1,13 @@
-package ru.mirea.skorobogatov.plang.TreeConstructor;
+package ru.mirea.skorobogatov.plang.TreeConstructor.Nodes;
 
-import ru.mirea.skorobogatov.plang.AdvancedTokens.FormulaToken;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.FormulaToken;
 import ru.mirea.skorobogatov.plang.PolishCalc.PolishCalc;
 import ru.mirea.skorobogatov.plang.Runner.VarReplacer;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Runnable;
 
 import java.util.HashMap;
 
-public class WhileNode extends ChooseNode implements Runnalbe{
+public class WhileNode extends ChooseNode implements Runnable {
 
     FormulaToken formulaToken;
 

@@ -1,4 +1,4 @@
-package ru.mirea.skorobogatov.plang.AdvancedTokens;
+package ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens;
 
 import ru.mirea.skorobogatov.plang.Lexer.Token;
 

@@ -1,13 +1,13 @@
 package ru.mirea.skorobogatov.plang.TreeGenerator;
 
 import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedLexer;
-import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.AdvancedToken;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 import ru.mirea.skorobogatov.plang.FunctionSeparator.FunctionSeparator;
 import ru.mirea.skorobogatov.plang.Lexer.Lexer;
 import ru.mirea.skorobogatov.plang.Lexer.Token;
-import ru.mirea.skorobogatov.plang.TreeConstructor.FunctionNode;
-import ru.mirea.skorobogatov.plang.TreeConstructor.Node;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Nodes.FunctionNode;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Nodes.Node;
 import ru.mirea.skorobogatov.plang.TreeConstructor.NodeConstructor;
 
 import java.util.HashMap;

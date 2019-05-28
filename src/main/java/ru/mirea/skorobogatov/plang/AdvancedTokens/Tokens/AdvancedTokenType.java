@@ -1,4 +1,4 @@
-package ru.mirea.skorobogatov.plang.AdvancedTokens;
+package ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens;
 
 public enum AdvancedTokenType {
     IF,

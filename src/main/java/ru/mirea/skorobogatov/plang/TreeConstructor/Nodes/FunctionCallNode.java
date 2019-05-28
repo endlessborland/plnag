@@ -1,11 +1,12 @@
-package ru.mirea.skorobogatov.plang.TreeConstructor;
+package ru.mirea.skorobogatov.plang.TreeConstructor.Nodes;
 
-import ru.mirea.skorobogatov.plang.AdvancedTokens.FunctionCallToken;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.FunctionCallToken;
 import ru.mirea.skorobogatov.plang.Runner.Runner;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Runnable;
 
 import java.util.HashMap;
 
-public class FunctionCallNode extends Node implements Runnalbe{
+public class FunctionCallNode extends Node implements Runnable {
 
     FunctionCallToken functionCallToken;
 

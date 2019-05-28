@@ -1,6 +1,6 @@
-package ru.mirea.skorobogatov.plang.AdvancedTokens;
+package ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens;
 
-import static ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedTokenType.VAR_ASSIGN;
+import static ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.AdvancedTokenType.VAR_ASSIGN;
 
 public class AssignToken extends AdvancedToken {
     String var;

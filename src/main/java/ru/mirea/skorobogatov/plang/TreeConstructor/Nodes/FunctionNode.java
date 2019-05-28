@@ -1,6 +1,6 @@
-package ru.mirea.skorobogatov.plang.TreeConstructor;
+package ru.mirea.skorobogatov.plang.TreeConstructor.Nodes;
 
-import ru.mirea.skorobogatov.plang.AdvancedTokens.FunctionToken;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.FunctionToken;
 
 public class FunctionNode extends Node {
 

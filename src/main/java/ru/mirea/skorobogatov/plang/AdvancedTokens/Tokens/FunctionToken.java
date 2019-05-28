@@ -1,29 +1,13 @@
-package ru.mirea.skorobogatov.plang.AdvancedTokens;
+package ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FunctionCallToken extends AdvancedToken {
+public class FunctionToken extends AdvancedToken {
 
     String funcName;
     List<String> params;
     int paramAmount;
-    String varName;
-
-    public void setVarName(String varName) {
-        this.varName = varName;
-    }
-
-    public String getVarName() {
-
-        return varName;
-    }
-
-    public FunctionCallToken() {
-        super(AdvancedTokenType.FUNC_CALL);
-        paramAmount = 0;
-        params = new ArrayList<>();
-    }
 
     public String getFuncName() {
         return funcName;
@@ -42,6 +26,13 @@ public class FunctionCallToken extends AdvancedToken {
         this.funcName = funcName;
     }
 
+    public FunctionToken() {
+        super(AdvancedTokenType.FUNC);
+        params = new ArrayList<>();
+        paramAmount = 0;
+
+    }
+
     public void addParam(String string) {
         params.add(string);
         paramAmount++;
@@ -52,7 +43,6 @@ public class FunctionCallToken extends AdvancedToken {
         super.print();
         System.out.println(funcName);
         System.out.println(paramAmount);
-        System.out.println(varName);
         for(String string: params)
             System.out.println(string);
     }

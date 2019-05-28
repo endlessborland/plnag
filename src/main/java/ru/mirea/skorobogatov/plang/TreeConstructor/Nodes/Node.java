@@ -1,4 +1,4 @@
-package ru.mirea.skorobogatov.plang.TreeConstructor;
+package ru.mirea.skorobogatov.plang.TreeConstructor.Nodes;
 
 import java.io.Serializable;
 

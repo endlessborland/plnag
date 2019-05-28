@@ -1,7 +1,7 @@
 package ru.mirea.skorobogatov.plang.FunctionSeparator;
 
-import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
-import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedTokenType;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.AdvancedToken;
+import ru.mirea.skorobogatov.plang.AdvancedTokens.Tokens.AdvancedTokenType;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 
 import java.util.ArrayList;

@@ -2,9 +2,9 @@ package ru.mirea.skorobogatov.plang.Runner;
 
 import org.apache.commons.lang3.SerializationUtils;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
-import ru.mirea.skorobogatov.plang.TreeConstructor.FunctionNode;
-import ru.mirea.skorobogatov.plang.TreeConstructor.Node;
-import ru.mirea.skorobogatov.plang.TreeConstructor.Runnalbe;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Nodes.FunctionNode;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Nodes.Node;
+import ru.mirea.skorobogatov.plang.TreeConstructor.Runnable;
 import ru.mirea.skorobogatov.plang.TreeGenerator.TreeGenerator;
 
 import java.util.HashMap;
@@ -43,7 +43,7 @@ public class Runner {
             node = coreNode.getNext();
         }
         while (node != null) {
-            Runnalbe r = (Runnalbe) SerializationUtils.clone(node);
+            Runnable r = (Runnable) SerializationUtils.clone(node);
             node = r.run(this.varMap);
             System.out.print("");
         }
