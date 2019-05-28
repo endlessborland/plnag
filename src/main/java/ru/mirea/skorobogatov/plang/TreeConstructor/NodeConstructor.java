@@ -18,8 +18,8 @@ public class NodeConstructor {
 
     private Node currentNode;
 
-    public NodeConstructor(int index, List<AdvancedToken> advancedTokenList) {
-        this.index = index;
+    public NodeConstructor(List<AdvancedToken> advancedTokenList) {
+        this.index = 0;
         this.advancedTokenList = advancedTokenList;
         currentNode = new Node();
         currentNode.setParent(null);
@@ -58,14 +58,16 @@ public class NodeConstructor {
                 whileConstructor((WhileToken) advancedTokenList.get(index));
                 break;
             case R_F_B:
-                currentNode.setNext(null);
+                Node temp = currentNode;
                 do {
                     try {
                         currentNode = currentNode.getParent();
                     } catch (NullPointerException e) {
                         throw new SyntaxException("Wrong figure brackets placement");
                     }
-                } while (!(currentNode instanceof WhileNode || currentNode instanceof  IfNode || currentNode instanceof ElseNode));
+                } while (!((currentNode instanceof WhileNode || currentNode instanceof  IfNode || currentNode instanceof ElseNode) &&((ChooseNode)currentNode).isFinalized() == false));
+                temp.setNext(currentNode);
+                ((ChooseNode) currentNode).finalize();
                 break;
         }
     }

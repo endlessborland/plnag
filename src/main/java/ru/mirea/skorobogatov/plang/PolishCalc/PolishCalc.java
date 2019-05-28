@@ -1,4 +1,6 @@
-package ru.mirea.skorobogatov.plang;
+package ru.mirea.skorobogatov.plang.PolishCalc;
+
+import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 
 import java.util.*;
 import java.lang.*;
@@ -10,16 +12,15 @@ public class PolishCalc {
 
     public static Integer calculate(String str) {
         List<String> expression = ExpressionParser.parse(str);
-        return Ideone.calc(expression);
+        return Calc.calc(expression);
     }
 
     static class ExpressionParser {
-        private static String operators = "+-*/<>=";
+        private static String operators = "+-*/<>=!%";
         private static String delimiters = "() " + operators;
         public static boolean flag = true;
 
         private static boolean isDelimiter(String token) {
-            if (token.length() != 1) return false;
             for (int i = 0; i < delimiters.length(); i++) {
                 if (token.charAt(0) == delimiters.charAt(i)) return true;
             }
@@ -42,26 +43,39 @@ public class PolishCalc {
         private static int priority(String token) {
             if (token.equals("(")) return 1;
             if (token.equals("+") || token.equals("-")) return 2;
-            if (token.equals("*") || token.equals("/")) return 3;
+            if (token.equals("*") || token.equals("/") || token.equals("%")) return 3;
             if (token.equals(">") || token.equals("<") || token.equals("=")) return 4;
+            if (token.equals(">=") || token.equals("<=") || token.equals("!=")) return 4;
             return 5;
         }
 
         public static List<String> parse(String infix) {
+            flag = true;
             List<String> postfix = new ArrayList<String>();
             Stack<String> stack = new Stack<String>();
-            StringTokenizer tokenizer = new StringTokenizer(infix, delimiters, true);
+            String str = "";
+            Lexer lexer = new Lexer();
+            List<String> temp;
+            try {
+                temp = lexer.run(infix);
+            } catch (SyntaxException e) {
+                System.err.print(e.getMessage());
+                System.exit(1);
+                return null;
+            }
             String prev = "";
             String curr = "";
-            while (tokenizer.hasMoreTokens()) {
-                curr = tokenizer.nextToken();
-                if (!tokenizer.hasMoreTokens() && isOperator(curr)) {
+            int i = 0;
+            while (i < temp.size()) {
+                curr = temp.get(i++);
+                if (!(i < temp.size()) && isOperator(curr)) {
                     System.err.println("Некорректное выражение.");
                     flag = false;
                     return postfix;
                 }
                 if (curr.equals(" ")) continue;
-                if (isFunction(curr)) stack.push(curr);
+                if (isFunction(curr))
+                    stack.push(curr);
                 else if (isDelimiter(curr)) {
                     if (curr.equals("(")) stack.push(curr);
                     else if (curr.equals(")")) {
@@ -97,7 +111,8 @@ public class PolishCalc {
                 prev = curr;
             }
             while (!stack.isEmpty()) {
-                if (isOperator(stack.peek())) postfix.add(stack.pop());
+                if (isOperator(stack.peek()))
+                    postfix.add(stack.pop());
                 else {
                     System.err.println("Скобки не согласованы.");
                     flag = false;
@@ -108,7 +123,7 @@ public class PolishCalc {
         }
     }
 
-    static class Ideone {
+    static class Calc {
         public static Integer calc(List<String> postfix) {
             Stack<Integer> stack = new Stack<Integer>();
             for (String x : postfix) {
@@ -125,6 +140,9 @@ public class PolishCalc {
                 else if (x.equals("/")) {
                     Integer b = stack.pop(), a = stack.pop();
                     stack.push(a / b);
+                } else if (x.equals("%")) {
+                    Integer b = stack.pop(), a = stack.pop();
+                    stack.push(a % b);
                 }
                 else if (x.equals("u-")) stack.push(-stack.pop());
                 else if (x.equals(">")) {
@@ -144,6 +162,24 @@ public class PolishCalc {
                 else if (x.equals("=")) {
                     Integer b = stack.pop(), a = stack.pop();
                     if (a == b)
+                        stack.push(1);
+                    else
+                        stack.push(0);
+                } else if (x.equals("!=")) {
+                    Integer b = stack.pop(), a = stack.pop();
+                    if (a != b)
+                        stack.push(1);
+                    else
+                        stack.push(0);
+                } else if (x.equals(">=")) {
+                    Integer b = stack.pop(), a = stack.pop();
+                    if (a >= b)
+                        stack.push(1);
+                    else
+                        stack.push(0);
+                } else if (x.equals("<=")) {
+                    Integer b = stack.pop(), a = stack.pop();
+                    if (a <= b)
                         stack.push(1);
                     else
                         stack.push(0);

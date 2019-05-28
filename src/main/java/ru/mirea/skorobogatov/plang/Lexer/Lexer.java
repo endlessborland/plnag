@@ -1,7 +1,6 @@
 package ru.mirea.skorobogatov.plang.Lexer;
 
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
-import ru.mirea.skorobogatov.plang.Token;
 
 import java.util.ArrayList;
 import java.util.List;

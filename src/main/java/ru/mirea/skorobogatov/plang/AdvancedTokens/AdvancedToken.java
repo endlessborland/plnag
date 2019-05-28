@@ -1,11 +1,12 @@
 package ru.mirea.skorobogatov.plang.AdvancedTokens;
 
-import ru.mirea.skorobogatov.plang.Token;
+import ru.mirea.skorobogatov.plang.Lexer.Token;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdvancedToken {
+public class AdvancedToken implements Serializable {
     List<Token> tokens;
     AdvancedTokenType tokenType;
 

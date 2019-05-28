@@ -2,7 +2,7 @@ package ru.mirea.skorobogatov.plang.AdvancedTokens;
 
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 import ru.mirea.skorobogatov.plang.Lexer.LexemPatterns;
-import ru.mirea.skorobogatov.plang.Token;
+import ru.mirea.skorobogatov.plang.Lexer.Token;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +64,7 @@ public class AdvancedLexer {
             FormulaToken formulaToken = new FormulaToken();
             i = createFORMULA(i, formulaToken);
             returnToken.setFormulaToken(formulaToken);
-        } else throw new SyntaxException("Error in ASSIGN at Token " + i);
+        } else throw new SyntaxException("Error in RETURN at Token " + i);
         this.advancedTokenList.add(returnToken);
         return i;
     }

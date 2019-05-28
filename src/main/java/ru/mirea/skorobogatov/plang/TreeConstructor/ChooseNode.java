@@ -1,34 +1,36 @@
 package ru.mirea.skorobogatov.plang.TreeConstructor;
 
-public class ChooseNode extends Node {
+import java.util.HashMap;
+
+public class ChooseNode extends Node{
 
     Node left;
-    private boolean sw;
+    private boolean setsw = true;
+    private boolean finalized = false;
+
+    public void finalize() {
+        finalized = true;
+    }
+
+    public boolean isFinalized() {
+        return finalized;
+    }
 
     public ChooseNode() {
         super();
-        sw = true;
     }
 
     public Node getLeft() {
         return left;
     }
 
-    @Override
-    public Node getNext() {
-        if (sw)
-            return this.left;
-        else
-            return this.next;
-    }
 
     @Override
     public void setNext(Node next) {
-        if (sw) {
+        if (setsw) {
             this.left = next;
-            sw = false;
+            setsw = false;
         } else
             this.next = next;
-
     }
 }

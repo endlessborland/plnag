@@ -5,7 +5,7 @@ import ru.mirea.skorobogatov.plang.AdvancedTokens.AdvancedToken;
 import ru.mirea.skorobogatov.plang.Exceptions.SyntaxException;
 import ru.mirea.skorobogatov.plang.FunctionSeparator.FunctionSeparator;
 import ru.mirea.skorobogatov.plang.Lexer.*;
-import ru.mirea.skorobogatov.plang.Token;
+import ru.mirea.skorobogatov.plang.Lexer.Token;
 import ru.mirea.skorobogatov.plang.TreeConstructor.Node;
 import ru.mirea.skorobogatov.plang.TreeConstructor.NodeConstructor;
 
@@ -108,7 +108,7 @@ public class Tests {
             List<List<AdvancedToken>> wierd;
             FunctionSeparator functionSeparator = new FunctionSeparator(advancedLexer.getAdvancedTokenList());
             functionSeparator.run();
-            NodeConstructor nodeConstructor = new NodeConstructor(0, functionSeparator.getMainTokenList());
+            NodeConstructor nodeConstructor = new NodeConstructor( functionSeparator.getMainTokenList());
             nodeConstructor.createTree();
             Node t = nodeConstructor.getTopNode();
             System.out.print("");

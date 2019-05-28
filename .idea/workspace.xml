@@ -2,24 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44d26dd8-2e45-4881-a877-fc76b40f2abc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/LexemPatterns.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/Lexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/VarReplacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Runnalbe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeGenerator/TreeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PolishCalcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SimpleTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FuncToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Memory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/PolishCalc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FuncCallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FuncNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/StackReadNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/StackWriteNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/TreeConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/VARReplacer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/FuncToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Lexer/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Memory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/PolishCalc$ExpressionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/PolishCalc$Ideone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/PolishCalc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/mirea/skorobogatov/plang/VARReplacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plang-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/plang-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,50 +67,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Tests.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="314">
-                    <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                      <element signature="method#testAdvancedLexer#0;class#Tests#0" />
-                      <element signature="method#testLexer#0;class#Tests#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChooseNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NodeConstructor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+            <state relative-caret-position="-168">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,68 +81,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvancedLexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java">
+      <file leaf-file-name="AdvancedToken.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="121">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#AdvancedLexer#0;class#AdvancedLexer#0" />
-                <element signature="method#run#0;class#AdvancedLexer#0" />
-                <element signature="n#!!doc;n#createELSE#0;n#AdvancedLexer#0" />
-                <element signature="method#createASSIGNorFUNC_CALL#0;class#AdvancedLexer#0" />
-                <element signature="method#createASSIGN#0;class#AdvancedLexer#0" />
-                <element signature="method#createFUNC_CALL#0;class#AdvancedLexer#0" />
-                <element signature="method#createWHILE#0;class#AdvancedLexer#0" />
-                <element signature="method#createFORMULA#0;class#AdvancedLexer#0" />
-                <element signature="method#createIF#0;class#AdvancedLexer#0" />
-                <element signature="method#createFUNC#0;class#AdvancedLexer#0" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReturnToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/ReturnToken.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormulaToken.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IfToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/IfToken.java">
+      <file leaf-file-name="Token.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WhileToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/WhileToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
               <folding>
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionToken.java">
+      <file leaf-file-name="Runnalbe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Runnalbe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1559007801563" expanded="true" signature="269:651" ph="..." />
+                <marker date="1559007801563" expanded="true" signature="277:651" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SimpleTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,30 +170,27 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
                 <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WhileNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="393">
+              <caret line="127" column="39" lean-forward="true" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
               <folding>
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#testAdvancedLexer#0;class#Tests#0" />
+                <element signature="method#testLexer#0;class#Tests#0" />
               </folding>
             </state>
           </provider>
@@ -189,6 +202,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -196,6 +210,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Double</find>
+      <find>isOper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,29 +227,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LexerPatterns.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PolishCalc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Memory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/VARReplacer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LexemPatterns.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Lexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TaskConstructor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TaskType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdvancedLexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdvancedTokens.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AdvancedTokenType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lexer/Lexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Exceptions/SyntaxException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AssignToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/WhileToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/IfToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java" />
@@ -242,31 +240,48 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/LexemPatterns.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FuncToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionCallToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/ReturnToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/FunctionSeparator/FunctionSeparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FuncCallNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FuncNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/TreeConstructor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/StackWriteNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/StackReadNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChoseToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PolishCalcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/VARReplacer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/FunctionRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/SimpleRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Runnalbe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeGenerator/TreeGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChoseToken.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/VarReplacer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/PolishCalc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/LexemPatterns.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Token.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SimpleTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="945" />
     <option name="y" value="139" />
     <option name="width" value="960" />
@@ -329,7 +344,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="Lexer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="Runner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
               <item name="TreeConstructor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="plang" type="462c0819:PsiDirectoryNode" />
+              <item name="TreeGenerator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="plang" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +398,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Tree/TreeConstructor" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -363,10 +406,10 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.mirea.skorobogatov.plang.Lexer" />
+      <recent name="ru.mirea.skorobogatov.plang.Tree.TreeConstructor" />
+      <recent name="ru.mirea.skorobogatov.plang.Tree" />
+      <recent name="ru.mirea.skorobogatov.plang.PolishCalc" />
       <recent name="ru.mirea.skorobogatov.plang.AdvancedTokens" />
-      <recent name="ru.mirea.skorobogatov.plang" />
-      <recent name="Lexer" />
-      <recent name="AdvancedTokens" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -384,18 +427,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.TreeTest">
+  <component name="RunManager" selected="JUnit.SimpleTests.testRecursion">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ru.mirea.skorobogatov.plang.Main" />
+      <module name="plang" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolishCalcTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="plang" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="PolishCalcTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -405,13 +453,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Tests.FuncSeparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimpleTests.testComplexStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="plang" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="FuncSeparatorTest" />
+      <option name="MAIN_CLASS_NAME" value="SimpleTests" />
+      <option name="METHOD_NAME" value="testComplexStructure" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SimpleTests.testRecursion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="plang" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SimpleTests" />
+      <option name="METHOD_NAME" value="testRecursion" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -429,23 +494,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
       <option name="METHOD_NAME" value="TreeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Tests.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plang" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="testAll" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -559,20 +607,21 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Application.Unnamed" />
       <item itemvalue="Maven.Run" />
-      <item itemvalue="JUnit.Tests.testAll" />
-      <item itemvalue="JUnit.Tests.FuncSeparatorTest" />
-      <item itemvalue="JUnit.Tests" />
       <item itemvalue="JUnit.Tests.testLexer" />
       <item itemvalue="JUnit.Tests.TreeTest" />
+      <item itemvalue="JUnit.PolishCalcTest.test" />
+      <item itemvalue="JUnit.SimpleTests.testComplexStructure" />
+      <item itemvalue="JUnit.SimpleTests.testRecursion" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleTests.testRecursion" />
+        <item itemvalue="JUnit.SimpleTests.testComplexStructure" />
+        <item itemvalue="JUnit.PolishCalcTest.test" />
         <item itemvalue="JUnit.Tests.TreeTest" />
         <item itemvalue="JUnit.Tests.testLexer" />
-        <item itemvalue="JUnit.Tests" />
-        <item itemvalue="JUnit.Tests.FuncSeparatorTest" />
-        <item itemvalue="JUnit.Tests.testAll" />
       </list>
     </recent_temporary>
   </component>
@@ -590,35 +639,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 32m 35s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 42m 42s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 32m 48s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 43m 16s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 35m 26s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 43m 45s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 35m 47s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 44m 22s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 36m 19s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 45m 40s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 36m 54s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 47m 50s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 38m 32s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 49m 19s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 45m 00s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 50m 31s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 46m 44s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 50m 40s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tests_TreeTest - 2019.05.27 at 06h 50m 08s.xml">
-      <configuration name="Tests.TreeTest" configurationId="JUnit" />
+    <history-entry file="PolishCalcTest_test - 2019.05.27 at 07h 51m 17s.xml">
+      <configuration name="PolishCalcTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -634,24 +683,24 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3157339" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3157339" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39915523" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30411828" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="0" />
@@ -690,111 +739,102 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests.java</url>
-          <line>113</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java</url>
+          <line>27</line>
           <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/VarReplacer.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java</url>
           <line>30</line>
           <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="115" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="currentNode" />
         <watch expression="advancedTokenList.get(index)" />
+        <watch expression="temp" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="input" />
+        <watch expression="Runner.stack" />
       </configuration>
     </watches-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>Runner.stack</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testAdvancedLexer#0;class#Tests#0" />
-            <element signature="method#testLexer#0;class#Tests#0" />
-            <element signature="method#FuncSeparatorTest#0;class#Tests#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/LexemPatterns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/VARReplacer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Tree.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Parser.java" />
@@ -803,20 +843,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/TaskConstructor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Task.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/SyntaxException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Exceptions/SyntaxException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -825,48 +851,6 @@
             <element signature="e#141#142#0" expanded="true" />
             <element signature="e#171#172#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/VARReplacer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/LexemPatterns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -885,51 +869,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedTokenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionCallToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,114 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/WhileToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/ReturnToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1097,40 +932,337 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionToken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Memory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/SimpleRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/FunctionRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/VARReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionCallToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FunctionToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="-1749">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AdvancedLexer#0;class#AdvancedLexer#0" />
-            <element signature="method#run#0;class#AdvancedLexer#0" />
             <element signature="n#!!doc;n#createELSE#0;n#AdvancedLexer#0" />
             <element signature="method#createASSIGNorFUNC_CALL#0;class#AdvancedLexer#0" />
             <element signature="method#createASSIGN#0;class#AdvancedLexer#0" />
-            <element signature="method#createFUNC_CALL#0;class#AdvancedLexer#0" />
-            <element signature="method#createWHILE#0;class#AdvancedLexer#0" />
-            <element signature="method#createFORMULA#0;class#AdvancedLexer#0" />
-            <element signature="method#createIF#0;class#AdvancedLexer#0" />
-            <element signature="method#createFUNC#0;class#AdvancedLexer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/WhileToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ReturnNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/AssignNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/LexemPatterns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/LexemPatterns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PolishCalcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/PolishCalc/PolishCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/WhileNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeGenerator/TreeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/FunctionCallNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/VarReplacer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/IfNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ElseNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Runnalbe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Runner/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/AdvancedToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/AdvancedTokens/FormulaToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Lexer/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="97" column="37" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+        <state relative-caret-position="393">
+          <caret line="127" column="39" lean-forward="true" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testAdvancedLexer#0;class#Tests#0" />
@@ -1139,21 +1271,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/ChooseNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="204">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="22" selection-end-column="22" />
           <folding>
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1559007801563" expanded="true" signature="269:651" ph="..." />
+            <marker date="1559007801563" expanded="true" signature="277:651" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/mirea/skorobogatov/plang/TreeConstructor/NodeConstructor.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SimpleTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+        <state relative-caret-position="510">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

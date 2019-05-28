@@ -1,6 +1,8 @@
 package ru.mirea.skorobogatov.plang.TreeConstructor;
 
-public class Node {
+import java.io.Serializable;
+
+public class Node implements Serializable {
     Node parent;
     Node next;
 

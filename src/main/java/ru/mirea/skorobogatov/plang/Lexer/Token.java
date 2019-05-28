@@ -1,8 +1,10 @@
-package ru.mirea.skorobogatov.plang;
+package ru.mirea.skorobogatov.plang.Lexer;
 
 import ru.mirea.skorobogatov.plang.Lexer.LexemPatterns;
 
-public class Token {
+import java.io.Serializable;
+
+public class Token implements Serializable {
     private LexemPatterns lexemPattern;
     private String value;
 
@@ -18,6 +20,6 @@ public class Token {
         return value;
     }
     public String toString() {
-        return lexemPattern + " '" + value + "'";
+        return value;
     }
 }

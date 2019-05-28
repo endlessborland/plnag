@@ -1,8 +1,12 @@
 package ru.mirea.skorobogatov.plang.TreeConstructor;
 
 import ru.mirea.skorobogatov.plang.AdvancedTokens.FormulaToken;
+import ru.mirea.skorobogatov.plang.PolishCalc.PolishCalc;
+import ru.mirea.skorobogatov.plang.Runner.VarReplacer;
 
-public class WhileNode extends ChooseNode {
+import java.util.HashMap;
+
+public class WhileNode extends ChooseNode implements Runnalbe{
 
     FormulaToken formulaToken;
 
@@ -16,5 +20,15 @@ public class WhileNode extends ChooseNode {
 
     public FormulaToken getFormulaToken() {
         return formulaToken;
+    }
+
+
+    @Override
+    public Node run(HashMap<String, Integer> varMap) {
+        String formula = VarReplacer.replaceString(this.formulaToken.getFormula(), varMap);
+        Integer a = PolishCalc.calculate(formula);
+        if (a != 0)
+            return this.left;
+        return this.next;
     }
 }
