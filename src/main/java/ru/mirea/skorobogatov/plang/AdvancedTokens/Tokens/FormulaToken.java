@@ -8,7 +8,7 @@ public class FormulaToken extends AdvancedToken {
 
     String formula = "";
 
-    FormulaToken() {
+    public FormulaToken() {
         super(FORMULA);
     }
 
