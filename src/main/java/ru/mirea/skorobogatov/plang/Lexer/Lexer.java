@@ -15,7 +15,8 @@ public class Lexer {
             for(LexemPatterns lexemPattern: LexemPatterns.values()) {
                 Matcher matcher = lexemPattern.getPattern().matcher(input);
                 if (matcher.find()) {
-                    list.add(new Token(lexemPattern, input.substring(matcher.start(), matcher.end())));
+                    if (lexemPattern != LexemPatterns.WS)
+                        list.add(new Token(lexemPattern, input.substring(matcher.start(), matcher.end())));
                     input = matcher.replaceFirst("");
                     search = 0;
                 }
