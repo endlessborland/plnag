@@ -40,9 +40,6 @@ public class NodeConstructor {
             case VAR_ASSIGN:
                 assignConstructor((AssignToken) advancedTokenList.get(index));
                 break;
-            case FUNC_CALL:
-                functionCallConstructor((FunctionCallToken) advancedTokenList.get(index));
-                break;
             case FUNC:
                 functionNodeConstructor((FunctionToken) advancedTokenList.get(index));
                 break;
@@ -102,14 +99,6 @@ public class NodeConstructor {
         currentNode.setNext(assignNode);
         assignNode.setParent(currentNode);
         currentNode = assignNode;
-    }
-
-    private void functionCallConstructor(FunctionCallToken functionCallToken) {
-        FunctionCallNode functionCallNode = new FunctionCallNode();
-        functionCallNode.setFunctionCallToken(functionCallToken);
-        currentNode.setNext(functionCallNode);
-        functionCallNode.setParent(currentNode);
-        currentNode = functionCallNode;
     }
 
     private void returnNodeConstructor(ReturnToken returnToken) {

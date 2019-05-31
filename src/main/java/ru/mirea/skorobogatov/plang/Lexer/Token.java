@@ -13,6 +13,7 @@ public class Token implements Serializable {
         this.value = value;
     }
 
+
     public LexemPatterns getLexeme() {
         return lexemPattern;
     }

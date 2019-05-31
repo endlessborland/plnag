@@ -41,7 +41,7 @@ public class AdvancedLexer {
                     createWHILE();
                     break;
                 case VAR:
-                    createASSIGNorFUNC_CALL();
+                    createASSIGN();
                     break;
                 case L_F_B:
                     createLFB();
@@ -63,12 +63,9 @@ public class AdvancedLexer {
 
     private void createReturn() throws SyntaxException {
         ReturnToken returnToken = new ReturnToken();
-
-        if (this.tokenList.get(++index).getLexeme() == LexemPatterns.L_R_B) {
-            FormulaToken formulaToken = new FormulaToken();
-            createFORMULA(formulaToken);
-            returnToken.setFormulaToken(formulaToken);
-        } else throw new SyntaxException("Error in RETURN at Token " + index);
+        FormulaToken formulaToken = new FormulaToken();
+        createFORMULA(formulaToken);
+        returnToken.setFormulaToken(formulaToken);
         this.advancedTokenList.add(returnToken);
         return;
     }
@@ -93,74 +90,61 @@ public class AdvancedLexer {
     }
     //endregion
 
-    private void createASSIGNorFUNC_CALL() throws SyntaxException {
-        int start_i = index;
-        switch (this.tokenList.get(++index).getLexeme()) {
-            case ASSIGN_OP:
-                index = start_i;
-                createASSIGN();
-                break;
-            case L_R_B:
-                index = start_i;
-                createFUNC_CALL();
-                break;
-            default:
-                throw new SyntaxException("Error in ASSIGN/FUNC_CALL at Token" + index);
-        }
-    }
-
     private void createASSIGN() throws SyntaxException {
-        AssignToken assignToken = new AssignToken();
-        assignToken.setVar(tokenList.get(index).getValue());
+        if (this.tokenList.get(index+1).getLexeme() == LexemPatterns.LOG_OP)
+        {
+            if (!this.tokenList.get(index+1).getValue().equals("="))
+                throw new SyntaxException("Error in ASSIGN: no assign lexem token " + index);
+            AssignToken assignToken = new AssignToken();
+            assignToken.setVar(tokenList.get(index).getValue());
 
-        if (this.tokenList.get(++index).getLexeme() != LexemPatterns.ASSIGN_OP)
-            throw new SyntaxException("Error in ASSIGN at Token " + index);
-        if (this.tokenList.get(++index).getLexeme() == LexemPatterns.L_R_B) {
+            if (!this.tokenList.get(++index).getValue().equals("="))
+                throw new SyntaxException("Error in ASSIGN at Token " + index);
             FormulaToken formulaToken = new FormulaToken();
             createFORMULA(formulaToken);
             assignToken.setFormulaToken(formulaToken);
-        } else throw new SyntaxException("Error in ASSIGN at Token " + index);
-        this.advancedTokenList.add(assignToken);
+            this.advancedTokenList.add(assignToken);
+        } else {
+            throw new SyntaxException("Error in ASSIGN/FUNC_CALL at Token" + index);
+        }
+
     }
 
-    private void createFUNC_CALL() throws SyntaxException {
-        int pos, brackets = 1;
+    private FunctionCallToken createFUNC_CALL() throws SyntaxException {
+        int pos = 1;
         FunctionCallToken functionCallToken = new FunctionCallToken();
-        functionCallToken.setFuncName(tokenList.get(index).getValue());
-        index++;
-        if (this.tokenList.get(index).getLexeme() == LexemPatterns.L_R_B) {
-            pos = 0;
-            while(brackets != 0) {
-                if (brackets < 0)
-                    throw new SyntaxException("Round brackets misplaced at function call at Token " + index);
-                switch(this.tokenList.get(++index).getLexeme()) {
-                    case L_R_B:
-                        brackets++;
-                        break;
-                    case R_R_B:
-                        brackets--;
-                        break;
-                    case VAR:
-                    case DIGIT:
-                        pos++;
-                        functionCallToken.addParam(this.tokenList.get(index).getValue());
-                        break;
-                    case COMMA:
-                        pos--;
-                        break;
-                    default:
-                        throw new SyntaxException("Error in FUNC_CALL, not a VAR nor COMMA nor DIGIT at Token " + index);
-                }
-                if (pos > 1)
-                    throw new SyntaxException("Error in FUNC_CALL misplaced COMMAS at Token " + index);
+        functionCallToken.setFuncName(this.tokenList.get(index).getValue());
+        while (this.tokenList.get(index).getLexeme() != LexemPatterns.SEM) {
+            switch(this.tokenList.get(++index).getLexeme()) {
+                case COMMA:
+                    pos++;
+                    break;
+                case OP:
+                    if (!this.tokenList.get(index).equals("-"))
+                        throw new SyntaxException("Error in functionCall at token " + index);
+                case DIGIT:
+                case L_R_B:
+                case VAR:
+                    index--;
+                    pos--;
+                    FormulaToken formulaToken = new FormulaToken();
+                    createFORMULA(formulaToken);
+                    functionCallToken.addParam((FormulaToken) this.advancedTokenList.get(this.advancedTokenList.size() - 1));
+                    this.advancedTokenList.remove(this.advancedTokenList.size() - 1);
+                    break;
+                default:
+                    throw new SyntaxException("Error in function call: unexpected symol at token " + index);
+
             }
-        } else throw new SyntaxException("Error in FUNC_CALL at Token " + index);
-        if (this.tokenList.get(++index).getLexeme() == LexemPatterns.FUNC_ASSIGN) {
-            if (this.tokenList.get(++index).getLexeme() == LexemPatterns.VAR) {
-                functionCallToken.setVarName(this.tokenList.get(index).getValue());
-            }
-        } else throw new SyntaxException("Error in FUNC_CALL nothing to assign to " + index);
-        this.advancedTokenList.add(functionCallToken);
+            if (pos > 1)
+                throw new SyntaxException("Error in function call: invalid arguments at token " + index);
+        }
+        if (functionCallToken.getParams().size() != 1)
+            if (pos != 0)
+                throw new SyntaxException("Error in function call: invalid arguments at token " + index);
+
+        return functionCallToken;
+
     }
 
     private void createWHILE() throws SyntaxException {
@@ -174,9 +158,15 @@ public class AdvancedLexer {
     }
 
     private void createFORMULA(FormulaToken formulaToken) throws SyntaxException {
-        int brackets = 1;
-        while (true) {
+        int brackets = 0;
+        while (this.tokenList.get(index).getLexeme() != LexemPatterns.SEM)
             switch(this.tokenList.get(++index).getLexeme()) {
+                case COMMA:
+                case SEM:
+                    if (brackets != 0)
+                        throw new SyntaxException("Error in FORMULA SYNTAX - brackets misplaced at Token " + index);
+                    this.advancedTokenList.add(formulaToken);
+                    return; // end of the line
                 case L_R_B:
                     brackets++;
                     formulaToken.addToken(this.tokenList.get(index));
@@ -185,21 +175,25 @@ public class AdvancedLexer {
                     brackets--;
                     if (brackets < 0)
                         throw new SyntaxException("Error in FORMULA SYNTAX - brackets at Token " + index);
-                    if (brackets == 0)
-                        return; // Only correct exit
                     formulaToken.addToken(this.tokenList.get(index));
                     break;
                 case OP:
                 case LOG_OP:
-                case VAR:
                 case DIGIT:
                     formulaToken.addToken(this.tokenList.get(index));
+                    break;
+                case VAR:
+                    if (this.tokenList.get(index + 1).getLexeme() == LexemPatterns.L_R_B) {
+                        formulaToken.addToken(new Token(LexemPatterns.FUNC_IN_FORMULA, "@"));
+                        formulaToken.addFunction(createFUNC_CALL());
+                    } else
+                        formulaToken.addToken(this.tokenList.get(index));
                     break;
                 default:
                     throw new SyntaxException("Error in FORMULA SYNTAX - invalid symbol at Token " + index);
             }
         }
-    }
+
 
     private void createIF() throws SyntaxException {
         IfToken ifToken = new IfToken();

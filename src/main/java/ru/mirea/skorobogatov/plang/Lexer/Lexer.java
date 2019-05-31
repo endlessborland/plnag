@@ -13,6 +13,8 @@ public class Lexer {
         int search = 0;
         while (input.length() > 0) {
             for(LexemPatterns lexemPattern: LexemPatterns.values()) {
+                if (lexemPattern == LexemPatterns.FUNC_IN_FORMULA)
+                    continue;
                 Matcher matcher = lexemPattern.getPattern().matcher(input);
                 if (matcher.find()) {
                     if (lexemPattern != LexemPatterns.WS)

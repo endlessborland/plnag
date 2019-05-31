@@ -6,18 +6,10 @@ import java.util.List;
 public class FunctionCallToken extends AdvancedToken {
 
     String funcName;
-    List<String> params;
+    List<FormulaToken> params;
     int paramAmount;
-    String varName;
 
-    public void setVarName(String varName) {
-        this.varName = varName;
-    }
 
-    public String getVarName() {
-
-        return varName;
-    }
 
     public FunctionCallToken() {
         super(AdvancedTokenType.FUNC_CALL);
@@ -29,7 +21,7 @@ public class FunctionCallToken extends AdvancedToken {
         return funcName;
     }
 
-    public List<String> getParams() {
+    public List<FormulaToken> getParams() {
         return params;
     }
 
@@ -42,8 +34,8 @@ public class FunctionCallToken extends AdvancedToken {
         this.funcName = funcName;
     }
 
-    public void addParam(String string) {
-        params.add(string);
+    public void addParam(FormulaToken formulaToken) {
+        params.add(formulaToken);
         paramAmount++;
     }
 
@@ -52,8 +44,7 @@ public class FunctionCallToken extends AdvancedToken {
         super.print();
         System.out.println(funcName);
         System.out.println(paramAmount);
-        System.out.println(varName);
-        for(String string: params)
-            System.out.println(string);
+        for(FormulaToken formulaToken: params)
+            System.out.println(formulaToken);
     }
 }
